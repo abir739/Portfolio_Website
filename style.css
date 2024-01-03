@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(65deg, #ef69e0, #6666f8); 
+    padding: 0 10px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.01);
+    display: flex; /* Added to enable flex properties */
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.wrapper {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%; /* Take up the full width of the container */
+    height: 100%; /* Take up the full height of the container */
+    box-sizing: border-box; /* Include padding and border in width and height calculation */
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* Optional: Add a subtle box-shadow */
+    flex: 1; /* Allow the wrapper to take up remaining space */
+}
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+   
+  }
+  .text-input .to-text{
+    border-radius: 0px;
+    border-left: 1px solid #ccc;
+  }
+  .text-input textarea{
+    height: 290px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: 0;
+    font-size: 22px;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+  .text-input textarea::placeholder{
+    color: #b7b6b6;
+  }
+  .controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .controls {
+    list-style-type: none; /* Removes the default bullet points */
+    margin: 10px; /* Remove default margin */
+    padding: 20px; /* Remove default padding */
+   
+  }
+  .controls .row .icons{
+    width: 50%;
+  }
+  .controls .row .icons i{
+    width: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    justify-content: center;
+  }
+  
+  .controls .row.from .icons{
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+  }
+  .controls .row.to .icons{
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+  }
+
+  .controls .row select{
+    color: #333;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    background: 0;
+    padding-left: 10px;
+  }
+.controls .exchange{
+  color: #0c0c0c;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+.text-input textarea::-webkit-scrollbar{
+  width: 4px;
+}
+.controls .row select::-webkit-scrollbar{
+  width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track{
+  background: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb{
+  background: #ddd;
+  border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb{
+  background: #999;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.container button {
+  width: 100%;
+  padding: 15px;
+  border: #0b0bd3;
+  background: #6666f8;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #333;
+  font-size: 21px;
+}
+
+/* the "@media" rule to apply styles only when the maximum width
+ of the viewport is 660 pixels or less. */
+@media (max-width: 660px) {
+  .container {
+    padding: 20px;
+  }
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+  .text-input .to-text {
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+  .text-input textarea {
+    height: 200px;
+  }
+  .controls .row .icons {
+    display: none;
+  }
+  .container button {
+    padding: 13px;
+    font-size: 16px;
+  }
+  .controls .row select {
+    font-size: 16px;
+  }
+  .controls .exchange {
+    font-size: 14px;
+  }
+}
