@@ -1,43 +1,116 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
- <head>
-    <title>Language Translator</title>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abir Cherif || Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
- </head>
- <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="text-input">
-          <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
-          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
-        </div>
-        <ul class="controls">
-          <li class="row from">
-            <div class="icons">
-              <i id="from" class="fas fa-volume-up"></i>
-              <i id="from" class="fas fa-copy"></i>
-            </div>
-            <select></select>
-          </li>
-          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
-          <li class="row to">
-            <select></select>
-            <div class="icons">
-              <i id="to" class="fas fa-volume-up"></i>
-              <i id="to" class="fas fa-copy"></i>
-            </div>
-          </li>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Abir</a>
+        <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
         </ul>
-      </div>
-      <button>Translate Text</button>
-    </div>
-    <script src="js/countries.js"></script>
-    <script src="js/script.js"></script>
-  </body>
-</html>
+        <button class="contact-btn"><a href="#contact">Contact Me <i class='bx bxs-send'></i></a></button>
+    </header>
 
+    <section class="home" id="home">
+        <div class="main-info">
+            <h3>Hello 👋 I'm  Abir Cherif</h3>
+            <h2>Frontend Developer</h2>
+            <p>
+                I am a Frontend Engineer based in Tunisia, characterized by a strong sense of autonomy and enthusiasm. My first professional experiences have enabled me to refine my skills and become proficient with a range of web and mobile development tools and techniques.<br><br> Seeking new challenges, I am eager to join an organization where I can apply my energy and passion for problem-solving.<br><br>
+                I continuously strive to enhance my skills and highly value learning from my colleagues. Additionally, I am committed to exploring new cultures and expanding my professional knowledge.
+            </p>
+            <div class="contact-box">
+                <button class="contact-btn"><a href="mailto:abir.cherif@ensi-uma.tn" class="btn">Hire Me Now! <i class='bx bx-mail-send'></i></a></button>
+                <button class="contact-btn"><a href="assets/pdf/Abir_cherif.pdf" target="_blank" class="btn">Download CV <i class='bx bxs-download'></i></a></button>
+            </div>
+            <div class="social-media-box">
+                <a href="https://github.com/abir739" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/abir-cherif-931770202/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-content">
+                <img src="assets/images/abir.jpg" alt="Abir Cherif" class="profile-img">
+            </div>
+        </div>
+    </section>
+    
+    <!-- ================= ABOUT ME SECTION ==========================00 -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/images/abir.jpg" alt="" class="aboutHero">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3>I'm a Frontend Developer</h3>
+            <p> Passionate about Web and Mobile development </p>
+            <div class="about-btn">
+                <button class="active">Favorite Skills</button>
+                <button>Experience</button>
+                <button>Education</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                        <p>User Experience Design - UI / UX</p>
+                        <span>Delight the user and make it work.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Web & User Interface Design - Development</p>
+                        <span>Website , Web Experience , ...</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Interaction Design - Animation</p>
+                        <span>I Like to move it move it</span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                        <p>Mobile Developer</p>
+                        <span>Design and implementation of front-end features using Flutter and Dart.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Mobile Development Intern</p>
+                        <span>Translation of UX/UI interfaces into tested and optimized Dart code</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Web Development Intern</p>
+                        <span>Implementation of a web application</span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                        <p>Online Courses and Bootcamps</p>
+                        <span>Continuous learning and skill development.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Internships and Work Experience</p>
+                        <span>Practical experience in real-world projects.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Bachelor's Degree in Computer Science</p>
+                        <span>Strong academic foundation in computer science.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cvContent">
+                <a href="assets/pdf/Abir_cherif.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
