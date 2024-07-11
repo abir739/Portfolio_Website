@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #e3edf7;
+    --bg-gradient-color: linear-gradient(180deg, rgb(42, 1, 247) 0%, rgb(8, 119, 160) 51%, rgba(99, 13, 178, 1) 100%);
+    --font-color: #90979f;
+    --main-color: #e6006d;
+    --accent-color: rgb(137, 53, 216);
+    --dark-color: #012040;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: var(--dark-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 15px 8%;
+    width: 100%;
+    background: #efeaeae8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--accent-color);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+ul.navbar {
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 1.5rem;
+}
+
+.navbar li a {
+    font-weight: 600;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    font-weight: 900;
+    background: var(--accent-color);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+button.contact-btn {
+    background: var(--accent-color);
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 900;
+    transition: all .3s;
+}
+
+.contact-btn a {
+    color: #fff;
+}
+
+.contact-btn:hover {
+    transform: scale(1.2);
+}
+
+section {
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.home, .about, .skills, .portfolio {
+    display: flex;
+    align-items: center;
+}
+.home .main-info, .about .about-content, .skills .skills-content, .portfolio .portfolio-content {
+    flex: 1;
+}
+
+.home {
+    padding: 60px 8%;
+    background: var(--bg-gradient-color);
+    height: 100vh;
+    justify-content: space-between;
+}
+.home .main-info {
+    max-width: 700px;
+}
+.home .main-info h3,
+.home .main-info h2 {
+    font-weight: 600;
+}
+
+.home .main-info h3 {
+    font-size: 1.5rem;
+}
+
+.home .main-info h2 {
+    font-size: 2.8rem;
+}
+
+.home .main-info p {
+    margin: 1rem 0;
+}
+
+.contact-box {
+    display: flex;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.contact-btn a {
+    color: var(--dark-color);
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+}
+
+.social-media-box {
+    margin: 2rem 0;
+    display: flex;
+    font-size: 3rem;
+    gap: 1rem;
+}
+
+.profile-img {
+    max-width: 400px;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.profileHero {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+}
+
+.skill{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 150px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.skills-container,
+.soft-skills-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.skills-container h3,
+.soft-skills-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+
+.soft-skill {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+}
+
+.skill:hover,
+.soft-skill:hover {
+    transform: translateY(-25px);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.skill h4,
+.soft-skill h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
