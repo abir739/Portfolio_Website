@@ -90,7 +90,7 @@ button.contact-btn {
 }
 
 .contact-btn:hover {
-    background: var(--dark-color);
+    background: #fff;
     cursor: pointer;
 }
 
