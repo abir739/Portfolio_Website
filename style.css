@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    padding: 15px 8%;
+    padding: 10px 8%;
     width: 100%;
     background: #efeaeae8;
     position: fixed;
@@ -100,10 +100,12 @@ button.contact-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 8%;
+    padding: 10px 5%;
+    margin-top: 80px;
 }
 
 .main-info {
+    
     flex: 1;
 }
 
@@ -126,6 +128,7 @@ button.contact-btn {
 }
 
 .profile-img img {
+    padding: 10px 8%;
     width: 450px;
     height: 450px;
     object-fit: cover;
@@ -161,11 +164,12 @@ button.contact-btn {
 /* Skills Section */
 .skills-section {
     padding: 60px 8%;
-    height: 93vh;
     background: var(--bg-color);
+    margin-bottom: 60px; /* Add margin to the bottom of the Skills Section */
 }
 
 .section-title {
+    padding: 60px 8%;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -218,14 +222,15 @@ button.contact-btn {
 /* Education Section */
 .education-section {
     padding: 60px 8%;
-    height: 100vh;
     background: var(--bg-color);
+    margin-top: 60px; /* Add margin to the top of the Education Section */
 }
 
 .education-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px; /* Add gap for better spacing */
 }
 
 .education-card {
@@ -233,10 +238,14 @@ button.contact-btn {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px 0;
     width: 100%;
     max-width: 600px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
 }
 
 .education-card h3 {
@@ -255,6 +264,20 @@ button.contact-btn {
     font-size: 0.9rem;
     color: var(--font-color);
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .education-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        width: 100%;
+    }
+}
+
 
 /* Experience Section */
 .experience-section {
@@ -340,16 +363,11 @@ button.contact-btn {
     margin-bottom: 40px;
 }
 
-/* Portfolio Section */
-.portfolio-section {
-    background: var(--bg-color);
-    padding: 60px 8%;
-}
-
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px; /* Add gap for better spacing */
 }
 
 .portfolio-card {
@@ -357,7 +375,7 @@ button.contact-btn {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    width: calc(33.333% - 20px);
+    width: calc(33.333% - 40px); /* Adjust width for better spacing */
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -368,7 +386,7 @@ button.contact-btn {
 
 .portfolio-card img {
     width: 100%;
-    height: 265px;
+    height: auto; /* Allow height to adjust automatically */
     object-fit: cover;
 }
 
@@ -376,6 +394,26 @@ button.contact-btn {
     padding: 20px;
     text-align: center;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .portfolio-card {
+        width: calc(50% - 40px); /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-card {
+        width: calc(100% - 40px); /* Adjust width for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-card {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
 
 .apps-section {
     padding: 50px 20px;
